@@ -1,28 +1,66 @@
-Auto Mail Sender
-This Node.js project utilizes the Gmail API to automatically send vacation auto-reply messages for unread emails from a specific sender.
+# Gmail Vacation Responder
 
-Project Structure
-controllers/MailController.js: Contains the main logic for processing and replying to unread emails.
-app.js: The main application file, sets up the Express server and schedules the MailController to run at regular intervals.
-How to Run
-Clone the repository to your local machine:
+This Node.js application serves as an automatic vacation responder for your Gmail inbox. It seamlessly utilizes the Gmail API to manage emails during your absence, providing automated responses and organization features.
 
-bash
-Copy code
-git clone <repository-url>
-Install dependencies:
+## Key Features
 
-bash
-Copy code
-npm install
-Set up Google API credentials:
+- **Effortless Automation:** Automatically responds to incoming emails during your vacation period.
+- **Organized Inbox:** Labels and relocates emails that have received responses.
+- **Randomized Scheduling:** Intervals for processing emails are randomized between 45 to 120 seconds.
 
-Place your credentials.json file inside the secrets folder.
-Run the application:
+## Quick Start
 
-bash
-Copy code
-npm start
-Configuration
-MailController.js: Update the labelName and q properties to customize label names and email filtering criteria.
-app.js: Adjust the cron schedule as needed.
+### Prerequisites
+
+- Node.js installed
+- Gmail API credentials (`credentials.json`) acquired from [Google Cloud Console](https://console.cloud.google.com/)
+
+### Installation Steps
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-username/gmail-vacation-responder.git
+    cd gmail-vacation-responder
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+3. Run the application:
+
+    ```bash
+    node app.js
+    ```
+
+4. Complete the authorization process by visiting the provided URL and entering the code.
+
+### Configuration Guide
+
+- Adjust `credentials.json` with your Gmail API credentials.
+- Personalize the label name in `app.js` (`labelName` variable).
+
+## Technical Insights
+
+- **Programming Language:** Node.js
+- **Dependencies:** googleapis, express
+- **Authentication:** Leveraging Google's local-auth library for seamless authentication.
+- **API Utilization:** Interaction with Gmail API for reading and sending emails.
+
+## Potential Enhancements
+
+- Incorporate robust error handling and logging for improved reliability.
+- Expand features to provide a more comprehensive set of vacation responder capabilities.
+
+## Demo Preview
+
+[Demo Video Link](#) - 
+
+## Author Details
+
+- Developer: Anshul Kumar Tiwari
+
+
