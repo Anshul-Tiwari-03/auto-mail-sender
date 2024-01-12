@@ -57,7 +57,7 @@ This Node.js application serves as an automatic vacation responder for your Gmai
 
 ## Demo Preview
 
-[Demo Video Link](#) - 
+[Demo Video Link](#) - https://drive.google.com/file/d/1_bID4GmBwvgXW0k6B8UkwLbcTsJ2HSPp/view?usp=drive_link
 
 ## Author Details
 
