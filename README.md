@@ -33,7 +33,7 @@ This Node.js application serves as an automatic vacation responder for your Gmai
 3. Run the application:
 
     ```bash
-    node app.js
+    npm start
     ```
 
 4. Complete the authorization process by visiting the provided URL and entering the code.
