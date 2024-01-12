@@ -46,7 +46,7 @@ This Node.js application serves as an automatic vacation responder for your Gmai
 ## Technical Insights
 
 - **Programming Language:** Node.js
-- **Dependencies:** googleapis, express
+- **Dependencies:** googleapis, express , cron-job
 - **Authentication:** Leveraging Google's local-auth library for seamless authentication.
 - **API Utilization:** Interaction with Gmail API for reading and sending emails.
 
